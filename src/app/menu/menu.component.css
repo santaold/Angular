@@ -1,0 +1,12 @@
+div {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+a {
+  display: block;
+  width: 200px;
+  height: 60px;
+  background: tomato;
+}

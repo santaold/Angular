@@ -2,23 +2,23 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { UsersComponent } from './users/users.component';
-import { UserComponent } from './user/user.component';
-import { CarsComponent } from './cars/cars.component';
-import {CarComponent} from './car/car.component';
+import {HttpClientModule} from '@angular/common/http';
+import { UsersComponent } from './components/users/users.component';
+import { UserComponent } from './components/user/user.component';
+import { PostComponent } from './components/post/post.component';
+import { PostsComponent } from './components/posts/posts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
     UsersComponent,
     UserComponent,
-    CarComponent,
-    CarsComponent
+    PostComponent,
+    PostsComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
